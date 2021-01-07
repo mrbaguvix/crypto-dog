@@ -19,4 +19,7 @@ export default makeStyles((theme:Theme)=> createStyles({
     crytoButton: {
       margin: theme.spacing(1),
     },
+    perAsset: {
+      fontWeight: 'bold'
+    }
 }));
