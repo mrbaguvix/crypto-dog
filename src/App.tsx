@@ -9,7 +9,7 @@ function App() {
     <>
     <CssBaseline />
       <Container maxWidth="sm">
-        <Typography gutterBottom variant="h4">
+        <Typography gutterBottom variant="h4" style={{marginTop:20}}>
           CryptoDog
         </Typography>
         <Home/>
