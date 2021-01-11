@@ -27,7 +27,7 @@ const PriceCard = (
     const strongValue =(value:string) => <span className={styles.bold}>{value}</span>
     return (
       <Card className={styles.root}>
-        <CardContent>
+        <CardContent className={styles.zeroPadLeftRight}>
           <div className={styles.assetMeta}>
             {
               XASSET.symbol === 'BTC' ? 
@@ -37,8 +37,8 @@ const PriceCard = (
             <span className={styles.assetMetaName}>{XASSET.title}</span>
             <span className={styles.assetMetaSymbol}>({XASSET.symbol})</span>
           </div>
-          <div style={{marginBottom: 18}}>
-            <Typography className={styles.title} color="textSecondary" gutterBottom={true}>
+          <div className={styles.paddCardCenter} style={{marginBottom: 18}}>
+            <Typography className={styles.title} color="textSecondary">
               Buy Price
             </Typography>
             <Typography variant="h5" component="h2">
@@ -49,14 +49,18 @@ const PriceCard = (
             </div>
             </Typography>
           </div>
-          <Divider />
-          <div style={{marginTop: 18}}>
-            <Typography className={styles.title} color="textSecondary" gutterBottom={true}>
+          <Divider className={styles.magCardCenter} />
+          <div className={styles.paddCardCenter} style={{marginBottom: 18, paddingTop: 18}}>
+            <Typography className={styles.title} color="textSecondary">
               Sell Price
             </Typography>
             <Typography variant="h5" component="h2">
               {strongValue(LASSET + amount_sell)}
             </Typography>
+          </div>
+          <Divider style={{marginTop: 10}} />
+          <div className={styles.lAssetInfo}>
+            Local currency is {LASSET}
           </div>
         </CardContent>
       </Card>

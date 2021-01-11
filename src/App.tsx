@@ -9,16 +9,18 @@ function App() {
   return (
     <>
     <CssBaseline />
-      <Container maxWidth="sm">
-        <Typography gutterBottom variant="h4" style={{marginTop:20}}>
+        <Container maxWidth="sm">
+        <Typography gutterBottom={true} variant="h4" style={{marginTop:20}}>
           CryptoDog
         </Typography>
+        
         <Typography variant="h6" color="textPrimary">
           Cryptocurrency assets monitor for BTC, ETH, LTC exchanges.
         </Typography>
+        </Container>
         <Divider />
         <Home/>
-    </Container>
+    
     </>
   );
 }

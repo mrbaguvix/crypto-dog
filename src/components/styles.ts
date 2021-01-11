@@ -32,7 +32,9 @@ export default makeStyles((theme:Theme)=> createStyles({
     assetMeta: {
       display:'flex', 
       alignItems: 'center', 
-      marginBottom: 8
+      marginBottom: 8,
+      paddingLeft: 16,
+      paddingRight: 16
     },
     assetMetaName: {
       marginLeft:7, 
@@ -48,5 +50,27 @@ export default makeStyles((theme:Theme)=> createStyles({
       display:'flex', alignItems: 'center', 
       marginTop:3, color: '#16c784', padding:0, 
       fontWeight:600, fontSize:15, borderRadius: 8
+    },
+    zeroPadLeftRight: {
+      paddingLeft: 0, 
+      paddingRight: 0
+    },
+    paddCardCenter: {
+      paddingLeft: 16,
+      paddingRight: 16
+    },
+    magCardCenter: {
+      marginLeft: 16,
+      marginRight: 16
+    },
+    lAssetInfo: {
+      paddingLeft: 16,
+      paddingRight: 16,
+      fontSize: 14, 
+      color: 'gray', 
+      paddingTop: 10
+    },
+    table: {
+      minWidth: 650,
     }
 }));
