@@ -121,7 +121,14 @@ export default ((props:Props)=>{
       </>
     );
     } else {
-        return (<div style={{textAlign: 'center', marginTop: 10}}>No trades history found</div>)
+        return (
+          <>
+          <Typography gutterBottom={true} variant="h4" style={{marginTop:20, textAlign: 'center'}}>
+          Trades
+        </Typography>
+        <div style={{textAlign: 'center', marginTop: 10}}>No trades history found</div>
+        </>
+        )
     }
 });
 

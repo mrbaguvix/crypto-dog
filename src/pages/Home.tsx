@@ -30,6 +30,15 @@ const CryptoBtn =(props:any)=> (
 )
 
 const exAssetData = []
+// demo data
+// {
+//   asset_id: 2566
+//   p: 0.54414131
+//   p7d: 12.06201036
+//   p24h: -7.25109177
+//   value: 392515483.92324954
+//   time: 1610403852081
+// }
 
 function Home() {
   const cssStyles = useStyles();
